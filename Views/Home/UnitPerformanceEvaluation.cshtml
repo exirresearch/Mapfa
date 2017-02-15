@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_Header")
+
+@*<div style="text-align: center; margin-top: 5px; position: relative;">
+    <ul class="main-tab">
+        <li class="main-tab__item">
+            <a href="/home/UserProfileEvaluation" class="main-tab__link">علم سنجی اعضای هیئت علمی</a>
+        </li>
+        <li class="main-tab__item">
+            <a class="main-tab__link active">ارزیابی عملکرد واحدهای پژوهشی</a>
+        </li>
+    </ul>
+</div>*@
+<main class="main-body">
+    <div class="container-fluid">
+        <div style="text-align: center; margin-top: -20px;">
+            <div data-component="unit-evaluation" data-list-url="AssessmentOfResearchUnitsPerformanceGridList" data-detail-url="ResearchCenterDetails"></div>
+        </div>
+    </div>
+</main>

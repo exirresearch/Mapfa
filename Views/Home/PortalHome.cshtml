@@ -1,0 +1,423 @@
+﻿
+@{
+    ViewBag.Title = "Dashbord";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<header class="main-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <div class="logoMinistryScience margin-top-40">
+                    <img class="img-responsive img-margin logoMinistryScienceImg" src="~/Content/styles/images/logoMinistryScience.png" alt="معاونت پژوهش و فناوری">
+                    <p class="text-center">معاونت پژوهش و فناوری</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-3 margin-top-30 padding-5 noWrap">
+                <span class="_bold">به پرتال خدمت الکترونیک مپفا خوش آمدید</span>
+            </div>
+            <div class="col-md-6 col-xs-9">
+                <div class="scimed-navbar margin-top-30">
+                    <div class="pull-left todayDate">
+                        <span>
+                            امروز:
+                        </span>
+                        <span>
+                            <span data-component="today" data-url="/Home/GetPersianDateTime"></span>
+                        </span>
+                    </div>
+                    <span class="separator pull-left"> | </span>
+                    <div class="pull-left titleSiteMed noWrap">
+                        <span>دسترسی به وب سایت رسمی : </span>
+                        <a href="http://msrt.ir/fa" target="_blank" title="وزارت علوم، تحقیقات و فناوری">وزارت علوم، تحقیقات و فناوری</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="overflow">
+            <div class="mapfa-header">
+                <div class="row">
+                    <div class="col-md-7 col-xs-12">
+                        <div class="logoImg">
+                            <div class="row">
+                                <img class="img-responsive img-margin" src="~/Content/styles/images/MapfaResearch.png" alt="مپفا">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slogan col-md-5 col-xs-12 margin-top-45">
+                        <img class="img-responsive img-margin" src="~/Content/styles/images/MapfaTitle.png" alt="سامانه مدیریت داده های پژوهش و فناوری ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="introdution-content text-center">
+            <div class="row">
+                <div class="col-md-2">
+                    <img class="img-responsive img-margin" src="~/Content/styles/images/introduction.png" alt="معرفی مپفا" />
+                </div>
+                <div class="col-md-1">
+                    <sapn class="title">معرفی<br />مپفا </sapn>
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        مپفا مخفف مدیریت پژوهش و فناوری ایران می باشد که قریب یک سال است به دستور جناب آقای دکتر وحید احمدی معاونت محترم پژوهش و
+                        فناوری آغاز شده است.
+                        <br />این سامانه با هدف ایجاد یک ساختار اطلاعاتی متمرکز از مجموعه اطلاعات تولید شده در حوزه پژوهش
+                        و فناوری کشور از کلیه منابع مختلف در حوزه تولید کنندگان (اعضای هیئت علمی , دانشجویان و ... )
+                        , مراکز پژوهشی و فناوری (دانشگاه ها و مراکز تحقیقاتی , پارک ها , مراکز رشد , نشریات و ..) و همچنین
+                        تولیدات پژوهشی (مقاله , کتاب , طرح ,اختراع , ابداع , محصولات فناورانه , پایان نامه و ... ) طراحی
+                        گردیده تا بتواند با شاخص گذاری بر روی این اطلاعات دسترسی به سیستم های گزارش دهی و داشبورد های
+                        مدیریتی را با ارائه گزارش های کمی (آماری) و کیفی (علم سنجی) فراهم آورد که در نهایت به خروجی های
+                        علم سنجی ، ارزیابی و ارزشیابی کلان در تمام حوزه ها در سطح ملی ، استانی ، دانشگاهی و حتی فردی
+                        بینجامد .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="quickAccess">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div>
+                                    <div class="col-md-5">
+                                        <img class="img-responsive img-margin" src="~/Content/styles/images/quickAccess.png" alt="دسترسی سریع" />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <span class="quickAccess-title">دسترسی سریع</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <a class="quickAccessLink" href="http://mapfa.msrt.ir/">
+                                    <div class="col-md-5">
+                                        <img class="img-responsive img-margin" src="~/Content/styles/images/dashboardLogin.png" alt="ورود به داشبورد سامانه مپفا"
+                                        />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <span>ورود به داشبورد <br> سامانه مپفا</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <a class="quickAccessLink" href="http://mapfa.msrt.ir/reg/step/agreement.aspx">
+                                    <div class="col-md-5">
+                                        <img class="img-responsive img-margin" src="~/Content/styles/images/register.png" alt="عضویت در سامانه مپفا" />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <span>عضویت در <br> سامانه مپفا</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="newsMapfa">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="title">اخبار کوتاه از مپفا</span>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="rssFeed">
+                                <i class="fa fa-rss"></i>
+                                <a href="#" class="rss">فید خبری مپفا را به خبرخوان خود اضافه کنید</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="carousel-content">
+                                                <div>
+                                                    <p class="newstext">آغاز طرح آمایش فناوری (پارک ها , مراکز رشد و واحد های فناور )
+                                                        در دهه مبارک فجر</p>
+                                                    <a class="pull-left newsLink" href="#">مشاهده کل خبر</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="icon-prev"></span>
+                            </a>
+                            <a class="left carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="icon-next"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="text-center margin-top-50 serviceTitle">فهرست خدمات مپفا در دفاتر معاونت پژوهش و فناوری</h4>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive img-margin" src="~/Content/styles/images/MapfaSeparator.png">
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-center margin-top-50 serviceTitle">تعداد خدمات الکترونیک در مپفا تا کنون : ۲۸ خدمت</h4>
+            </div>
+        </div>
+        <div class="row margin-top-25">
+            <div class="col-md-3">
+                <div class="servicesBox">
+                    <h3 class="servicesTitle text-center">دفتر برنامه ریزی و سیاست‌گذاری امور فناوری</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="servicesBox">
+                    <h3 class="servicesTitle text-center">دفتر برنامه ریزی و سیاست‌گذاری امور پژوهش‌</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="servicesBox">
+                    <h3 class="servicesTitle text-center">دفتر حمایت و پشتیبانی امور پژوهش و فناوری</h3>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="servicesBox">
+                    <h3 class="servicesTitle text-center">دفتر ارتباط با صنعت</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="servicesSeparator">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="text-center">روال‌های با رنگ سبز آماده بهره برداری می باشند</p>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center">روال‌های با رنگ سبز آماده بهره برداری می باشند</p>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center">روال‌های با رنگ سبز آماده بهره برداری می باشند</p>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center">روال‌های با رنگ سبز آماده بهره برداری می باشند</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="servicesBoxList">
+                    <ul>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين درخواست تاسيس پارک و روال داوري و تصويب (موافقت قطعي)</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين درخواست تاسيس مرکز رشد و روال داوري و تصويب (موافقت قطعي)</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين درخواست تصويب اساسنامه پارک</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين درخواست تصويب اساسنامه مرکز</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ارسال درخواست به هيئت امناء </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ارسال درخواست به هيئت اجرايي </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ثبت واحد هاي فنآور پارک</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ثبت واحد هاي فنآور مرکز</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ارزشيابي پارک ها</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ارزشيابي مراکز </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ثبت پروژه هاي بند الف (پژوهشهاي تقاضا محور) </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين پذيرش پروژه هاي بند الف (پژوهشهاي تقاضا محور) </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين مديريت پروژه و نظارت بر پروژه هاي بند الف (پژوهشهاي تقاضا محور) </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين لغو موافقت اصولي/ قطعي پارک و مراکز علم و فناوري </a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين ثبت  اطلاعات تجاري سازي شرکت ها</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين بانک اطلاعات انتقال فناوري </a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="servicesBoxList">
+                    <ul>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين گروه نشريات علمي کشور، تعیین اعتبار علمی (اعتباردهی و ارزیابی)</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين درخواست مجوز دوره هاي پذيرش دانشجو هاي PHD By Research </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين فرصت‌هاي مطالعاتي</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين ثبت کتب علمی (تاليف و ترجمه)</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين پرتال شوراي توسعه پژوهش و فناوري در علوم انساني و هنر</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين برگزاري همايش هاي علمي</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين پرتال اطلاع رساني آيين نامه ها و دستور العمل ها</div>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين گروه قطب هاي علمي کشور</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين گروه ايجاد و توسعه واحد هاي پژوهشي (موافقت اصولی، قطعی، پایش عملکرد)</a>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-mited">روال‌هاي آنلاين گروه انجمن هاي علمي کشور (موافقت اصولی، قطعی، پایش عملکرد)</div>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">سامانه ملی علم سنجی اعضای هیئت علمی وزارت علوم مجهز به ربات خواندن اطلاعات علم سنجی افراد از ISI بر اساس نام و نام خانوادگی و Scopus بر اساس Author ID</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="servicesBoxList">
+                    <ul>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين انتخاب پژوهشگر برتر</a>
+                        </li>
+                        <li>
+                            <a class="col-md-11 _green" href="#">روال‌هاي آنلاين انتخاب فناور برتر </a>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين انتخاب قطب برتر</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين انتخاب طرحهای پژوهشی برتر</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين انتخاب انجمن های برتر</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين انتخاب نشریات برتر </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين جشنواره شتاب</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين جشنواره دانش آموزی </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين اعتبارات و منابع انسانی</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين صدور مجوز کتب و نشریات علمی خارجی </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين تامین کتب و نشریات علمی خارجی</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين تامین منابع علمی</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين اجلاس پژوهش و فناوری</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاین شورای هماهنگی و برنامه ریزی مناطق ده گانه پژوهش و فناوری</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">تهیه گزارش جامع عملکرد سالیانه پژوهش و فناوری دانشگاه ها، موسسات پژوهشی، پارکها و مراکز علم و فناوری کشور از داده های تامین شده در زیرسامانه های سایر دفاتر</div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="servicesBoxList">
+                    <ul>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين داوری و تایید پروژه ها و انتخاب مجری</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين مدیریت اجرای پروژه</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين مدیریت پرداخت ها</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين اخذ پسادکتری صنعتی </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين فرصت مطالعاتی </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاین دبیرخانه کمیته پدافند غیرعامل </div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين شیوه نامه حمایت از پایان نامه</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين شیوه نامه حمایت از پروژه ها</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين شیوه نامه راه اندازی دفاتر دانشگاهی</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين حمایت از تالیف و ترجمه کتاب</div>
+                        </li>
+                        <li>
+                            <div class="col-md-11 text-muted">روال‌هاي آنلاين شیوه نامه حمایت از همایش، کارگاه و نشست تخصصی</div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

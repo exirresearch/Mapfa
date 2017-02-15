@@ -1,0 +1,65 @@
+{
+  "name": "scitext",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "webpack": "webpack --config webpack.config-development.js -d --progress --display-chunks --display-reasons --watch",
+    "webpack_production": "webpack -p --config webpack.config-production.js --progress --display-chunks --display-reasons --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "bootstrap": "^3.3.7",
+    "chart.js": "^2.2.2",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.4.0",
+    "eslint-config-google": "^0.6.0",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-react": "^5.2.2",
+    "file-loader": "^0.9.0",
+    "font-awesome": "^4.6.3",
+    "font-awesome-webpack": "0.0.4",
+    "immutable": "^3.8.1",
+    "imports-loader": "^0.6.5",
+    "jquery": "^2.2.4",
+    "json-loader": "^0.5.4",
+    "jsx-loader": "^0.13.2",
+    "postcss": "^5.1.2",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-import": "^8.1.2",
+    "postcss-loader": "^0.10.1",
+    "postcss-reporter": "^1.4.1",
+    "postcss-url": "^5.1.2",
+    "react": "^15.3.1",
+    "react-chartjs-2": "^1.2.4",
+    "react-dom": "^15.3.1",
+    "react-hot-loader": "^1.3.0",
+    "sticky-table-headers": "^0.1.19",
+    "style-loader": "^0.13.1",
+    "underscore": "^1.8.3",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "ignore": [
+      "./node_modules",
+      "./bower_components"
+    ]
+  },
+  "dependencies": {
+    "react-tabs": "^0.7.0",
+    "sticky-table-headers": "^0.1.19"
+  }
+}

@@ -1,0 +1,371 @@
+.top-header {
+	background-color : #737373;
+	color            : #eee;
+	padding          : 15px 0;
+	font-size        : 13px;
+}
+
+.red-title {
+	color : #ee3034;
+}
+
+.dateTime span {
+	color : #3ee369
+}
+
+.updateTime {
+	color : #ee3034;
+}
+
+.top-header_link {
+	color     : #eee;
+	font-size : 13px;
+}
+
+.top-header_link:hover {
+	color : #fff;
+}
+
+.header {
+	background : url("~/Content/styles/images/wordMap.png") center center no-repeat;
+	padding    : 11px 0 30px;
+	margin-top : 10px;
+}
+
+.img-margin {
+	margin : auto;
+}
+
+.logoMinistryScience p {
+	color       : #555;
+	font-family : Vazir;
+	font-weight : 500;
+}
+
+.logoImg img {
+	margin     : auto;
+	text-align : right;
+}
+
+.logoImg .col-md-7 {
+	padding-right : 0;
+	padding-left  : 0;
+}
+
+.logoTitle {
+	color       : #333;
+	font-family : "Rezvan";
+	font-size   : 17px;
+	font-weight : 600;
+}
+
+.logoText {
+	color       : #555;
+	font-size   : 12px;
+	font-weight : 600;
+}
+
+.siteTitle {
+	color       : #23903f;
+	font-family : "Rezvan";
+}
+
+.siteTitle h1 {
+	font-size     : 24px;
+	font-weight   : 600;
+	margin-bottom : 0;
+	text-align    : center;
+}
+
+.siteTitle p {
+	color         : #555;
+	font-family   : 'Segoe UI', Geneva, Verdana, sans-serif;
+	font-size     : 18px;
+	font-weight   : 600;
+	margin-bottom : 0;
+	text-align    : center;
+}
+
+.iranMap {
+	width      : 200px;
+	margin-top : 35px;
+}
+
+.slogan.col-md-3 {
+	margin-right : 0;
+	width        : 23%;
+}
+
+.sloganTitle {
+	color       : #cb1a20;
+	font-weight : 600;
+}
+
+.sloganText {
+	line-height   : 1.5;
+	margin-bottom : 10px;
+	text-align    : justify;
+}
+
+.main-content {
+	border        : 1px solid #aaa;
+	border-radius : 5px;
+	box-shadow    : 0 0 20px #666;
+	padding       : 25px 20px;
+	margin-bottom : 80px;
+}
+
+.main-content .main-top {
+	margin-bottom : 15px;
+}
+
+.main-content .main-top .col-md-10 {
+	padding-right : 0;
+}
+
+.main-content-title-top {
+	color       : #555;
+	font-family : "Rezvan";
+	font-size   : 26px;
+	font-weight : 600;
+}
+
+.main-content-text-top {
+	color       : #555;
+	font-size   : 14px;
+	font-weight : 500;
+	padding-top : 12px;
+}
+
+.main-content-over .col-md-2 {
+	width : 20%;
+}
+
+.main-content-title {
+	color         : #23903f;
+	font-family   : "Rezvan";
+	font-size     : 19px;
+	margin-bottom : 10px;
+}
+
+.main-content-text {
+	height : 150px;
+}
+
+.main-content-text p {
+	color         : #333;
+	line-height   : 1.5;
+	margin-bottom : 10px;
+}
+
+.main-content-link {
+	font-family : "Rezvan";
+	font-size   : 16px;
+}
+
+.main-content-link:hover {
+	color : #23903f;
+}
+
+p.sub-text {
+	font-size  : 12px;
+	height     : 70px;
+	margin-top : 20px;
+}
+
+.main-content-link i.fa.fa-search {
+	color        : #999;
+	margin-right : 3px;
+}
+
+ul.list-facilities {
+	list-style-type : none;
+	padding-right   : 0;
+	margin-top      : 25px;
+}
+
+ul.list-facilities li {
+	border-bottom : 1px solid #adadad;
+	padding       : 5px 0;
+}
+
+ul.list-facilities li:last-child {
+	border-bottom : none;
+}
+
+ul.list-facilities li a {
+	color : #333;
+}
+
+ul.list-facilities li a:hover {
+	color : #23903f;
+}
+
+::-webkit-input-placeholder {
+	color : #ccc;
+}
+
+::-moz-placeholder {
+	color : #ccc;
+}
+
+:-ms-input-placeholder {
+	color : #ccc;
+}
+
+:-moz-placeholder {
+	color : #ccc;
+}
+
+.main-footer .col-md-3 {
+	padding-right : 0px;
+	margin-left   : 3%;
+	width         : 22%;
+}
+
+.footer-section__header {
+	font-family : "Rezvan";
+	font-size   : 21px;
+}
+
+.footer-section__body {
+	font-weight : 400;
+}
+
+._green {
+	color : #77e895;
+}
+
+._green:hover {
+	color : #6bcd85;
+}
+
+.footer-section__stats th,
+.footer-section__stats td {
+	font-weight : 400;
+}
+
+.border-left-red {
+	border-left-width    : 2px;
+	border-left-style    : solid;
+	-webkit-border-image : -webkit-linear-gradient(rgba(0, 0, 0, 0), #ef4448, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image    : -ms-linear-gradient(rgba(0, 0, 0, 0), #ef4448, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image    : -moz-linear-gradient(rgba(0, 0, 0, 0), #ef4448, rgba(0, 0, 0, 0)) 1 100%;
+	-o-border-image      : -o-linear-gradient(rgba(0, 0, 0, 0), #ef4448, rgba(0, 0, 0, 0)) 1 100%;
+	border-image         : linear-gradient(to bottom, rgba(0, 0, 0, 0), #ef4448, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.border-left-gray {
+	border-left-width    : 2px;
+	border-left-style    : solid;
+	-webkit-border-image : -webkit-linear-gradient(rgba(0, 0, 0, 0), #e4e4e4, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image    : -ms-linear-gradient(rgba(0, 0, 0, 0), #e4e4e4, rgba(0, 0, 0, 0)) 1 100%;
+	-moz-border-image    : -moz-linear-gradient(rgba(0, 0, 0, 0), #e4e4e4, rgba(0, 0, 0, 0)) 1 100%;
+	-o-border-image      : -o-linear-gradient(rgba(0, 0, 0, 0), #e4e4e4, rgba(0, 0, 0, 0)) 1 100%;
+	border-image         : linear-gradient(to bottom, rgba(0, 0, 0, 0), #e4e4e4, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.mouseHover:hover {
+	background : rgba(255, 255, 255, 1);
+	background : -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 0.45) 25%, rgba(242, 242, 242, 0.85) 50%, rgba(242, 242, 242, 0.45) 75%, rgba(254, 254, 254, 1) 100%);
+	background : -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(25%, rgba(242, 242, 242, 0.45)), color-stop(50%, rgba(242, 242, 242, 0.85)), color-stop(75%, rgba(242, 242, 242, 0.45)), color-stop(100%, rgba(254, 254, 254, 1)));
+	background : -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 0.45) 25%, rgba(242, 242, 242, 0.85) 50%, rgba(242, 242, 242, 0.45) 75%, rgba(254, 254, 254, 1) 100%);
+	background : -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 0.45) 25%, rgba(242, 242, 242, 0.85) 50%, rgba(242, 242, 242, 0.45) 75%, rgba(254, 254, 254, 1) 100%);
+	background : -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 0.45) 25%, rgba(242, 242, 242, 0.85) 50%, rgba(242, 242, 242, 0.45) 75%, rgba(254, 254, 254, 1) 100%);
+	background : linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 0.45) 25%, rgba(242, 242, 242, 0.85) 50%, rgba(242, 242, 242, 0.45) 75%, rgba(254, 254, 254, 1) 100%);
+	filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fefefe', GradientType=0);
+}
+
+.grid-container {
+	margin-bottom : 25px;
+}
+
+.detailHeader {
+	border-bottom : 4px solid #e4eaed;
+	width         : 30%;
+}
+
+.detailBody {
+	font-weight : 500;
+	position    : relative;
+	padding     : 10px 5px 0;
+	height      : 675px;
+	overflow    : auto;
+}
+
+.detail__header_subject-right {
+	color       : #23903f;
+	font-family : "rezvan";
+	margin-top  : 5px;
+}
+
+.detail__header_subject-left {
+	color       : #004f9f;
+	font-family : "rezvan";
+	margin-top  : 5px;
+}
+
+.detail__body_text {
+	line-height : 1.6;
+	text-align  : justify;
+}
+
+@media only screen and (max-device-width : 768px) {
+	.universityAccess {
+		margin-top : 10px;
+	}
+
+	.logoMinistryScienceImg {
+		width : 70px;
+	}
+
+	.logoMpfa {
+		width : 100px;
+	}
+
+	.logoImg {
+		text-align : center;
+	}
+
+	.siteTitle h1 {
+		font-size  : 18px;
+		margin-top : 5px;
+	}
+
+	.siteTitle p {
+		font-size : 14px;
+	}
+
+	.iranMap {
+		margin-top   : 100px;
+		margin-right : -35px;
+	}
+
+	.slogan.col-xs-5 {
+		width : 40%
+	}
+
+	.main-content-text-top {
+		font-size  : 12px;
+		text-align : center;
+	}
+
+	.main-content-over .col-xs-4 {
+		width : 33.33333333%;
+	}
+
+	.main-content-over .col-xs-6 {
+		width      : 50%;
+		margin-top : 50px;
+	}
+
+	.main-footer .col-xs-2 {
+		margin-top : 5px;
+	}
+
+	.main-footer .col-xs-9 {
+		width       : 75%;
+		margin-top  : 15px;
+		margin-left : 0;
+	}
+}

@@ -1,0 +1,36 @@
+.main-tab {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.main-tab:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-tab__item {
+    float: right;
+}
+
+.main-tab__link {
+    display: block;
+    background: #dfe5e6;
+    font-weight: bold;
+    padding: 16px 15px;
+    height: 54px;
+    margin: 0 2px;
+    border-radius: 10px 10px 0 0;
+    color: #9f9e9e;
+    width: 255px;
+    font-size: 16px;
+}
+
+.main-tab__link.active {
+    background: #737373;
+    color: white;
+    cursor: default;
+}

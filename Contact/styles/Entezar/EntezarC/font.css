@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'EntezarC';
+  src: url('./fonts/EntezarC.eot');
+  src: url('./fonts/EntezarC.woff2') format('woff2'),
+       url('./fonts/EntezarC.eot?#iefix') format('embedded-opentype');
+  src: url('./fonts/EntezareZohoorC.woff') format('woff'),
+       url('./fonts/EntezareZohoorC.ttf') format('truetype'),
+       url('./fonts/EntezareZohoorC.svg#EntezareZohoorC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,133 @@
+﻿@{ Layout = null; }
+
+@model MSRT.Models.DTO.RequestForReformDto
+
+<!doctype html>
+<html>
+<head>
+    <link href="~/Content/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bower_components/bootstrap-rtl/dist/css/bootstrap-rtl.min.css" rel="stylesheet" />
+    <link href="~/Content/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/styles/general.css" rel="stylesheet" />
+    <script src="~/Content/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="~/Content/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    @using (Html.BeginForm(MVC.Home.ActionNames.RequestForReform, MVC.Home.Name, new { id = "Reform" }, FormMethod.Post, new { enctype = "multipart/form-data", @class = "", @id = "reform", onsubmit = "window.parent.successModal()" }))
+    {
+        <div class="container-fluid">
+            <div class="row mb-5">
+                @Html.HiddenFor(model => model.ProfileId)
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;">
+                        <i class="fa fa-user fa-fw"></i>&nbsp&nbspنام کامل فارسی
+                        <sup><i class="fa fa-fw fa-asterisk" style="color:red; font-size:.7em;"></i></sup>
+                    </h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.FaFullName, new { style = "padding-left: 35px;", @class = "form-control", @required = true })
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;">
+                        <i class="fa fa-user fa-university"></i>&nbsp&nbspدانشگاه/موسسه
+                        <sup><i class="fa fa-fw fa-asterisk" style="color:red; font-size:.7em;"></i></sup>
+                    </h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.UniversityName, new { style = "padding-left: 35px;", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.UniversityName, " ")
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;">
+                        <i class="fa fa-mobile fa-fw"></i>&nbsp&nbspموبایل
+                        <sup><i class="fa fa-fw fa-asterisk" style="color:red; font-size:.7em;"></i></sup>
+                    </h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.Mobile, new { style = "padding-left: 35px;", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Mobile, " ")
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;">
+                        <i class="fa fa-envelope fa-fw"></i>&nbsp&nbspایمیل
+                        <sup><i class="fa fa-fw fa-asterisk" style="color:red; font-size:.7em;"></i></sup>
+                    </h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.Email, new { style = "padding-left: 35px;", @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Email, " ")
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;">
+                        <i class="fa fa-newspaper-o fa-fw"></i>&nbsp&nbspAuthor ID
+                    </h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.AuthorId, new { style = "padding-left: 35px;", @class = "form-control" })
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;"><i class="fa fa-wpforms fa-fw"></i>&nbsp&nbspنام لاتین</h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.EnFirstName, new { style = "padding-left: 35px;", @class = "form-control", @required = true })
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;"><i class="fa fa-wpforms fa-fw"></i>&nbsp&nbspنام خانوادگی لاتین</h5>
+                </div>
+                <div class="col-xs-8">
+                    @Html.TextBoxFor(model => model.EnLastName, new { style = "padding-left: 35px;", @class = "form-control", @required = true })
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;"><i class="fa fa-bars fa-fw"></i>&nbsp&nbspشرح درخواست</h5>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-xs-12">
+                    @Html.TextAreaFor(model => model.Description, new { style = "padding-left: 20px;", rows = "6", cols = "70", @class = "form-control" })
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-xs-4">
+                    <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;"><i class="fa fa-file-image-o"></i>&nbsp&nbspعکس پروفایل</h5>
+                </div>
+                <div class="col-xs-8">
+                    <input type="file" name="ProfileImage" style="padding:6px 12px" />
+                </div>
+            </div>
+            @*<div class="row">
+                    <div class="col-xs-4">
+                        <h5 class="name-filter__name" style="color: rgb(22, 91, 166); font-weight: bold;">
+                            <i class="fa fa-key"></i>&nbsp&nbspکد امنیتی
+                            <sup><i class="fa fa-fw fa-asterisk" style="color:red; font-size:.7em;"></i></sup>
+                        </h5>
+                    </div>
+                    <div class="col-xs-8">
+                        @Html.HiddenFor(model => model.hfCaptchaText)
+                        <img src="@Model.CaptchImageUrl" id="imgCaptchaText" name="imgCaptchaText" alt="CaptchaImage" />
+                        @Html.TextBoxFor(model => model.CaptchaText)
+                        @Html.LabelFor(model => model.CaptchMessage)
+                    </div>
+                </div>*@
+        </div>
+        <div class="modal-footer">
+            <div id="loading" class="fa fa-refresh fa-spin _green" style="display:none"></div>
+            <input type="submit" class="btn btn-primary pull-left" value="ارسال" />
+        </div>
+    }
+</body>
+</html>

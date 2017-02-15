@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Rezvan;
+    src: url('./fonts/REZVAN.eot');
+    src: url('./fonts/REZVAN.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/REZVAN.woff') format('woff'),
+    url('./fonts/REZVAN.ttf') format('truetype');
+    font-weight: normal;
+}

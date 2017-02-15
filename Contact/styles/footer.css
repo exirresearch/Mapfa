@@ -1,0 +1,10 @@
+.footer-section__header {
+    margin: 0;
+}
+
+.footer-section__body {
+    text-align: justify;
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}

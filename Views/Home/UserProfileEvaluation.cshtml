@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_Header")
+
+@*<div style="text-align: center; margin-top: 5px; position: relative;">
+    <ul class="main-tab">
+        <li class="main-tab__item">
+            <a class="main-tab__link active">علم سنجی اعضای هیئت علمی</a>
+        </li>
+        <li class="main-tab__item">
+            <a href="/home/UnitPerformanceEvaluation" class="main-tab__link">ارزیابی عملکرد واحدهای پژوهشی</a>
+        </li>
+    </ul>
+</div>*@
+<main class="main-body">
+    <div class="container-fluid">
+        <div data-component="person-evaluation" data-list-url="ScienceMeasurementOfScienceCommitteeMemberGridList" data-detail-url="ProfileDetails" data-field-url="GetUniversitiesIncludeFields"></div>
+    </div>
+</main>
+<script>
+    function successModal() {
+        $('#iframeModal').find('button.close').click();
+        toastr.success('درخواست اصلاح با موفقیت انجام شد');
+    };
+    function errorModal() {
+        $('#iframeModal').find('button.close').click();
+        toastr.error('درخواست اصلاح با شکست مواجه شد');
+    };
+</script>

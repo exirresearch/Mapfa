@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewBag.Title = "Dashbord";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<div class="top-header text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3">
+                            <span>
+                                امروز:
+                            </span>
+                            <span class="dateTime">
+                                <span data-component="today" data-url="/Home/GetPersianDateTime"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-5 col-xs-5">
+                            <span>
+                                تعداد کل اعضای هیئت علمی:
+                            </span>
+                            <span class="facultyMember red-title">
+                                <span>۳۴۵۹۶</span>نفر
+                            </span>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <span>
+                                آخرین تاریخ بروزرسانی:
+                            </span>
+                            <span class="updateTime">
+                                <span> ۴ بهمن ۱۳۹۴</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                    <div class="universityAccess">
+                        <i class="fa fa-database"></i>
+                        <a class="top-header_link" href="#">جهت اخذ دسترسی برای دانشگاه / موسسه و یا سازمان خود به این اطلاعات اینجا کلیک کنید </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="header">
+                <div class="row">
+                    <div class="col-md-3 col-xs-4">
+                        <div class="logoMinistryScience">
+                            <img class="img-responsive img-margin logoMinistryScienceImg" src="~/Content/styles/images/logoMinistryScience.png" alt="معاونت پژوهش و فناوری">
+                            <p class="text-center">معاونت پژوهش و فناوری</p>
+                        </div>
+                        <div class="logoImg">
+                            <div class="row">
+                                <div class="col-md-5 col-xs-12">
+                                    <img class="img-responsive img-margin logoMpfa" src="~/Content/styles/images/logoMapfa.png" alt="مپفا">
+                                </div>
+                                <div class="col-md-7 col-xs-12">
+                                    <span class="logoTitle">مدیریت پژوهش و فناوری ایران</span>
+                                    <br>
+                                    <span class="logoText">سامانه یکپارچه مدیریت <br> اطلاعات پژوهشی و فنآوری</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="siteTitle">
+                            <h1>سامانه <span class="red-title">علم سنجی</span> اعضای هیئت علمی</h1>
+                            <p>Iranian Scientometrics information</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-2">
+                        <img class="img-responsive img-margin iranMap" src="~/Content/styles/images/iranMap.png" alt="Iran">
+                    </div>
+                    <div class="col-md-1 col-xs-1">
+                        <img class="img-responsive img-margin" src="~/Content/styles/images/Leader.png" alt="حضرت آیت الله خامنه‌ای">
+                    </div>
+                    <div class="slogan col-md-3 col-xs-5">
+                        <p class="sloganTitle">مقام معظم رهبــــــری  <br> حضرت آیت الله خامنه‌ای :</p>
+                        <p class="sloganText">لازم است که ما بانک اطلاعات و مرکزی داشته باشیم , که همه بدانند که چه انجام شده  است و چه چیزی برای تکمیل یک پژوهش لازم است تا بتواند قطعات گوناگون در کنار هم جمع شود ...</p>
+                        <br>
+                        <p class="sloganText">نکته ای را که مورد تاکید بنده است , آن است که پژوهش اولا مورد اهتمام قرار بگیرد , ثانیا سمت و سوی پرداختن به نیازهای کشور را پیدا کند .یعنی حقیقتا پژوهشهائی بکنیم که مورد نیاز ماست ....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content text-center">
+                <div class="row main-top">
+                    <div class="col-md-2 col-xs-12">
+                        <span class="main-content-title-top">روش‌های جستجو</span>
+                    </div>
+                    <div class="col-md-10 col-xs-12">
+                        <p class="main-content-text-top text-right">با توجه به حجم بالای اطلاعات ,جهت تسریع در دسترسی به اطلاعات مورد نظر خود لطفا با انتخاب یکی ار روش‌های زیر به اطلاعات دست یابید:</p>
+                    </div>
+                </div>
+
+                <div class="row main-content-over">
+                    <div class="border-left-red col-md-2 col-sm-4 col-xs-4 mouseHover">
+                        <div class="main-content-title">
+                            جستجوی نام,<br>نام خانوادگی / کد ملی
+                        </div>
+                        <div class="main-content-text">
+                            <p>لطفا نام / نام خانوادگی و یا کد ملی خود را برای جستجو وارد نماید:</p>
+                            <input class="form-control" type="text" name="Name" placeholder="مثال: علی احمدی">
+                        </div>
+                        <a class="red-title main-content-link" href="#">آغاز جستجو <i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="border-left-red col-md-2 col-sm-4 col-xs-4 mouseHover">
+                        <div class="main-content-title">
+                            انتخاب دانشگاه / <br> موسسه آموزش عالی
+                        </div>
+                        <div class="main-content-text">
+                            <p>لطفا نام دانشگاه و یا موسسه آموزش عالی مورد نظر خود را انتخاب نمایید:</p>
+                            <input class="form-control" type="text" name="University" placeholder="مثال: دانشگاه تهران">
+                        </div>
+                        <a class="red-title main-content-link" href="#">نمایش اطلاعات <i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="border-left-red col-md-2 col-sm-4 col-xs-4 mouseHover">
+                        <div class="main-content-title">
+                            انتخاب مرتبه علمی / <br> رشته تحصیلی
+                        </div>
+                        <div class="main-content-text">
+                            <p>لطفا مرتبه علمی و یا رشته تحصیلی مورد نظر خود را انتخاب نمایید:</p>
+                            <select class="form-control" style="margin-bottom: 5px;">
+                                <option value="" selected disabled>رشته // مثال : مهندسی عمران</option>
+                                <option value="1">مهندسی صنایع</option>
+                                <option value="2">مهندسی کامپیوتر</option>
+                                <option value="3">مهندسی الکترونیک</option>
+                            </select>
+                            <select class="form-control">
+                                <option value="" selected disabled>مرتبه علمی // مثال : استادیار</option>
+                                <option value="1">استاد تمام</option>
+                                <option value="2">استادیار</option>
+                            </select>
+                        </div>
+                        <a class="red-title main-content-link" href="#">نمایش اطلاعات <i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="border-left-red col-md-2 col-sm-6 col-xs-6">
+                        <div class="main-content-title">
+                            1000 پژوهشگر برتر بر اساس <br> هارش / استنادات
+                        </div>
+                        <div class="main-content-text">
+                            <p>لطفا شاخص مورد نظر خود را انتخاب نمایید:</p>
+                            <div class="row">
+                                <div class="border-left-gray col-md-6 col-sm-6 col-xs-6 mouseHover">
+                                    <p class="sub-text"> 1000 پژوهشگر برتر بر اساس شاخص استناد <br> Citation</p>
+                                    <a class="red-title main-content-link" href="#">مشاهده</a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 mouseHover">
+                                    <p class="sub-text">1000 پژوهشگر برتر بر اساس شاخص هرش <br> H-Index</p>
+                                    <a class="red-title main-content-link" href="#">مشاهده</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-6">
+                        <div class="main-content-title">
+                            <span class="red-title">امکانات . قابلیت ها</span>
+                        </div>
+                        <div class="main-content-text">
+                            <ul class="list-facilities">
+                                <li class="mouseHover"><a href="/Home/Introduction">معرفی سامانه علم سنجی</a></li>
+                                <li class="mouseHover"><a href="#">درخواست اصلاح اطلاعات</a></li>
+                                <li class="mouseHover"><a data-toggle="modal" data-target="#FeedBackModal" style="cursor:pointer">ارسال بازخورد</a></li>
+                                <li class="mouseHover"><a href="/Home/ContactSupport">تماس با بخش پشتیبانی</a></li>
+                                <li class="mouseHover"><a href="/Home/HelpTutorials">راهنما و آموزش</a></li>
+                                <li class="mouseHover"><a href="/Home/FAQ">سئوالات متداول</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+<style>
+    .main-content-text .stat__name, .main-content-text .stat__pic, .main-content-text .stat__title {
+        display: none;
+    }
+
+    .main-content-text .stat__body {
+        width: auto !important;
+    }
+    .main-content-text .stat__item {
+        width: 200px;
+    }
+
+    .main-content-text .stat__value {
+        font-weight: normal !important;
+    }
+
+    .main-content-text .stat {
+        padding-top: 0;
+    }
+
+    .main-content-text .stat__item + .stat__item {
+        display: none;
+    }
+</style>
+
+<div data-component="grid-container"></div>

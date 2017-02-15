@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'TwCenMT';
+  src: url('./fonts/TwCenMT-Regular.woff') format('woff'),
+       url('./fonts/TwCenMT-Regular.ttf') format('truetype'),
+       url('./fonts/TwCenMT-Regular.svg#TwCenMT-Regular') format('svg');
+  src: url('./fonts/ufonts.com_tw-cen-mt.eot');
+  src: url('./fonts/ufonts.com_tw-cen-mt.woff2') format('woff2'),
+       url('./fonts/ufonts.com_tw-cen-mt.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

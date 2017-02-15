@@ -1,0 +1,23 @@
+.table>thead>tr>th {
+    border-bottom: 4px solid #e4eaed;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid #eeeeee;
+}
+
+.table .selected .selected-sign {
+    position: relative;
+}
+
+.table .selected .selected-sign:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -23px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #a3d869;
+}

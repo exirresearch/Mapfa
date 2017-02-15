@@ -1,0 +1,21 @@
+.detail-table {
+    width: 100%;
+}
+
+.detail-table > tbody > tr > td, .detail-table > tbody > tr > th{
+    border-bottom: 1px dashed #eee;
+    padding: 10px 5px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.detail-table > tbody > tr > th {
+    color: #000099;
+    width: 100px;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.detail-table .fa {
+    margin-left: 10px;
+}

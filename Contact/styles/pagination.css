@@ -1,0 +1,32 @@
+.pagination {
+    vertical-align: top;
+    margin: 0;
+    padding: 10px 0 8px;
+    float: none;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background: transparent;
+    border: 1px solid white;
+    outline: solid 1px #c9c9c9;
+    color: #5d5d5d;
+    cursor: default;
+}
+
+.pagination > li > a, .pagination > li > span {
+    background: transparent;
+    border: none;
+    color: #5d5d5d;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+    background-color: transparent;
+    color: #cbcbcb;
+}
+
+.pagination > .title > a, .pagination > .title > a:focus, .pagination > .title > a:hover, .pagination > .title > span, .pagination > .title > span:focus, .pagination > .title > span:hover {
+    color: #5d5d5d;
+    cursor: default;
+}

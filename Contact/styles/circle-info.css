@@ -1,0 +1,31 @@
+.circle-info-container {
+    background: #da688a;
+    width: 175px;
+    height: 175px;
+    border-radius: 100px;
+    padding: 25px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+.circle-upper-info {
+    margin: -25px;
+    padding: 30px 25px 15px;
+    background: #a3d768;
+}
+
+.circle-upper-info__up {
+    font-size: 68px;
+    line-height: 44px;
+}
+
+.circle-bottom-info {
+    position: absolute;
+    top: 115px;
+    right: 25px;
+    left: 25px;
+    font-size: 28px;
+}

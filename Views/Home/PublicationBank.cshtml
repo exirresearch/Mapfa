@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_Header")
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="slide">
+                <img src="~/Content/styles/images/publication-header.jpg" style="width: 100%" />
+            </div>
+        </div>
+    </div><br />
+    <div class="row">
+        <div class="col-md-12">
+            <div data-component="publication-grid-container" data-source="publications"></div>
+        </div>
+    </div>
+</div>
+<br /><br />

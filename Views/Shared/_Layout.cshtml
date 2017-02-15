@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<!--[if (IE 8)]><html class="lt-ie9">
+<html class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <title>سامانه علم سنجی اعضای هیئت علمی | مپفا</title>
+    <link rel="stylesheet" href="~/Content/bower_components/font-awesome/css/font-awesome.min.css">
+    <script src="~/Content/app.bundle.js?v1"></script>
+    @Styles.Render("~/Content/toastr")
+    <style>
+        .lt-ie9 #old {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff url("/Content/styles/images/old.png") no-repeat 50% 50%;
+            z-index: 99999;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    @Scripts.Render("~/bundles/toastr")
+    <div id="old"></div>
+    <div class="loading"></div>
+    @RenderBody()
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-xs-2">
+                    <img class="img-responsive" src="~/Content/styles/images/feedBack.png" alt="feedBack">
+                </div>
+                <div class="col-md-3 col-xs-9">
+                    <h3 class="footer-section__header">
+                        ارسال نظرات , درخواست تصصیح اطلاعات
+                    </h3>
+                    <p class="footer-section__body">
+                        چنانچه در مشخصات ذکر شده برای عضو هیات علمی (اعم از مشخصات فردی، پروفایل‌ها و غیره) اطلاعات ناصحیح مشاهده نمودید یا نظری در مورد سامانه و عملکرد آن دارید تقاضامند است ما را در جریان بگذارید:
+                    </p>
+                    <a class="_green" data-toggle="modal" data-target="#FeedBackModal" style="cursor:pointer">برای ارسال بازخورد لطفا کلیک کنید</a>
+                    <div class="modal fade" id="FeedBackModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title stat__name">ارسال بازخورد</h4>
+                                </div>
+                                <div class="modal-body">
+                                    @using (Ajax.BeginForm(MVC.Home.ActionNames.FeedBack, MVC.Home.Name, FormMethod.Post,
+                                                new AjaxOptions
+                                                {
+                                                    HttpMethod = "POST",
+                                                    OnSuccess = "getResult",
+                                                    LoadingElementId = "loading"
+                                                }, new { id = "FeedBackForm" }))
+                                    {
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-user fa-fw"></i>&nbsp&nbspنام</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="Name" name="Name" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-user fa-fw"></i>&nbsp&nbspنام خانوادگی</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="Family" name="Family" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-mobile fa-fw"></i>&nbsp&nbspموبایل</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="Mobile" name="Mobile" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-envelope fa-fw"></i>&nbsp&nbspایمیل</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="Email" name="Email" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-newspaper-o fa-fw"></i>&nbsp&nbspAuthor ID</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="AuthorId" name="AuthorId" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-google fa-fw"></i>&nbsp&nbspGoogleScholar Address</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="GoogleScholarAddress" name="GoogleScholarAddress" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-wpforms fa-fw"></i>&nbsp&nbspنام متداول فارسی</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="FaNickname" name="FaNickname" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-wpforms fa-fw"></i>&nbsp&nbspنام متداول انگلیسی 1</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="EnNickname1" name="EnNickname1" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-wpforms fa-fw"></i>&nbsp&nbspنام متداول انگلیسی 2</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="EnNickname2" name="EnNickname2" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-wpforms fa-fw"></i>&nbsp&nbspنام متداول انگلیسی 3</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input id="EnNickname3" name="EnNickname3" type="text" class="form-control" style="padding-left: 35px;">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <h5 class="name-filter__name" style="color: #333; font-weight: bold;"><i class="fa fa-bars fa-fw"></i>&nbsp&nbspشرح درخواست</h5>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <textarea id="Description" name="Description" rows="6" cols="70" class="form-control" style="padding-left: 20px;"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div id="loading" class="fa fa-refresh fa-spin" style="display:none; margin-left:3px;color:#23903f;"></div>
+                                            <input type="submit" class="btn btn-primary" value="ارسال" />
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-xs-2">
+                    <img class="img-responsive" src="~/Content/styles/images/monitor.png" alt="monitor">
+                </div>
+                <div class="col-md-3 col-xs-9">
+                    <h3 class="footer-section__header">
+                        آمار بازدید
+                    </h3>
+                    <p class="footer-section__body">
+                        <div class="footer-section__stats" data-component="footer-stats" data-url="/home/GetVisitStatistics"></div>
+                    </p>
+                </div>
+                <div class="col-md-1 col-xs-2">
+                    <img class="img-responsive" src="~/Content/styles/images/copyRight.png" alt="copyRight">
+                </div>
+                <div class="col-md-3 col-xs-9">
+                    <h3 class="footer-section__header">
+                        حفظ مالکیت معنوی
+                    </h3>
+                    <p class="footer-section__body">
+                        کلیه حقوق این وب سایت و مطالب آن متعلق به گروه علم سنجی معاونت پژوهش وفناوری وزارت علوم , تحقیقات و فناوری بوده و هر استفاده از مطالب آن با ذکر منبع بلامانع است.
+                    </p>
+                    <a class="_green" href="http://exirresearch.ir/" target="_blank" title="فناوری دانش و پژوهش اکسیر">مجری: فناوری دانش و پژوهش اکسیر</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/Content/jsx.bundle.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @Scripts.Render("~/bundles/toastr")
+    <script type="text/javascript">
+        function getResult(data) {
+            if (data.result == 'success') {
+                toastr.success('ارسال بازخورد با موفقیت انجام شد');
+                $('#FeedBackModal').hide();
+                $('.modal-backdrop.fade.in').fadeOut();
+            }
+        }
+    </script>
+</body>
+</html>

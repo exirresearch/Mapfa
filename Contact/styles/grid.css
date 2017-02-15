@@ -1,0 +1,53 @@
+.grid {
+    width: 100%;
+}
+
+.grid-container {
+    border: 1px solid #c4c4c4;
+    padding-top: 10px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.grid-container .table tr > td:first-child, .grid-container .table tr > th:first-child {
+    padding-right: 10px;
+}
+
+.grid-container .table tr > th:nth-child(2), .grid-container .table tr > td:nth-child(2) {
+    text-align: right;
+    width: auto;
+}
+
+.grid-container .table tr > td:nth-child(2) {
+    color: #0734fc;
+}
+
+.grid-container .table tr > td:last-child, .grid-container .table tr > th:last-child {
+    padding-left: 20px;
+}
+
+.table > thead > tr > th {
+    height: 60px;
+    width: 80px;
+}
+
+.full-width .table > thead > tr > th {
+    width: 90px;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px 5px;
+    text-align: center;
+}
+
+.table > tbody > tr > td {
+    /*white-space: nowrap;*/
+}
+
+.clickable-row tr {
+    cursor: pointer;
+}
+
+.auto-width .unit-name {
+    width: 270px !important;
+}
